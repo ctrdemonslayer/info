@@ -1,0 +1,39 @@
+table{
+	font-family: sans-serif;
+	width:100%;
+	border-collapse:collapse;
+	background:#0102ad;
+	color:black;
+	border:1px solid black;
+}
+th{
+	background:black;
+	color:#0102ad;
+	text-align:left;
+	font-size:30px;
+	padding-left:1.5%;
+	text-align:center;
+}
+td{
+	width:12%;
+	font-size:18px;
+	padding:.5%
+}
+tr:nth-child(odd){
+	background-color:black;
+	color:#0102ad;
+	border:1px solid #0102ad;
+}
+.lots{
+	font-size:13px;
+}
+.n{
+	font-size:27px;
+	padding-left:7.5%;
+}
+tr{
+	width:10%;
+}
+#t{
+	padding:0%;
+}

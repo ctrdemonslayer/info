@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>form</title>
+	</head>
+	<body>
+		<form action="contact_form.php" method="post" oninput="invoice.value-parsenInt(total.value)+parsenInt(shiping.value)">
+			<label for="name">Username or Email:</label>
+			<input type="text" name="name">
+			<br>
+			<label for="pasword">Pasword</label>
+			<input type="text" name="pasword">
+			<br>
+			<label for="source">where did you here about us.</label>
+			<select name="source">
+				<option value="google">google</option>
+				<option value="yahoo">yahoo</option>
+				<option value="friend">friend</option>
+				<option value="family-member">family member</option>
+				<option value="social-media">social media</option>
+				<option value="other">other</option>
+			</select>
+			<br>
+			<label for="message">Message</label>
+			<br>
+			<textarea name="message" rows="8" cols="75"></textarea><br>
+			 <br>
+			 <label for="methoid">shiping methoid </label>
+			   <select name="methoid">
+			   	<optgroup label="Business">
+			   		<option value="biz_overnight">overnight</option>
+			   		<option value="biz_ground">ground</option>
+			   	</optgroup>
+			   	<optgroup label="ressidential">
+			   		<option value="res-overnight">overnight</option>
+			   		<option value="res-ground">ground</option>
+			   	</optgroup>
+			   </select>
+			<br>
+			<label for="options">Options</label>
+			<br>
+			<input type="checkbox" name="options" value="fragile">Fragile<br>
+			<input type="checkbox" name="options" value="automated">automated<br>
+			<input type="checkbox" name="options" value="rushed">Rushed<br>
+			<input type="checkbox" name="options" value="live">Live<br>
+			<br>
+			<label for="delivery">shiping preference</label>
+			<br>
+			<input type="radio" name="delivery" value="in-store">In store
+			<br>
+			<input type="radio" name="delivery" value="shiped">shiped
+			<br>
+			<input type="submit" value="join">
+			<br>
+
+			<label for="total">subtotal</label><br>
+			<input type="text" name="total" value="0"><br>
+
+			<label for="shiping">subtotal</label><br>
+			<input type="text" name="shiping" value="9"><br>
+
+			Total for invoice:$ <output name="invoice" for="total tax"></output>
+
+		</form>	
+	</body>
+</html>
